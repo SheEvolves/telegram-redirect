@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+  var base = "https://tgleadstracker.com/go.php?uid=4&ch=12";
+  var incoming = window.location.search; // e.g. "?gclid=abc&utm_source=x"
+  var extra = incoming ? "&" + incoming.substring(1) : "";
+  window.location.replace(base + extra);
+</script>
+</head>
+<body></body>
+</html>
